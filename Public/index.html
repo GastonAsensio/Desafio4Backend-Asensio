@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <title>DESAFIO 4 - APIs Restful</title>
+</head>
+
+<body>
+    <h2>Registra un usuario</h2>
+    <form id="usersForm">
+        <label>Nombre</label>
+        <input name="name">
+        <label>Apellido</label>
+        <input name="lastname">
+        <label>Edad</label>
+        <input name="age">
+        <input type="submit">
+    </form>
+
+    <br/>
+
+    <h2>Registra una mascota</h2>
+    <form id="petsForm">
+        <label>Nombre</label>
+        <input name="name">
+        <label>Raza</label>
+        <input name="breed">
+        <label>Edad</label>
+        <input name="age">
+        <input type="submit">
+    </form>
+
+    <br/>
+
+   <!--  SINGLE FILE -->
+   <form action="/uploadfile" enctype="multipart/form-data" method="POST">
+       <input type="file" name="myFile" />
+       <input type="submit" value="Subir Archivo" />
+   </form>
+
+   <!--  MULTIPLE FILE -->
+   <form action="/uploadfiles" enctype="multipart/form-data" method="POST">
+       <input type="file" name="myFiles" multiple />
+       <input type="submit" value="Subir Archivos" />
+   </form>
+   <script src="app.js"></script>
+</body>
+
+</html>
