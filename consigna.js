@@ -126,3 +126,7 @@ Multer facilita el guardado de los archivos.
   "url": "",
   "id": 2
 }*/
+
+/*PUSHEAR GIT ADD .
+  git commit -m "segundo commit"
+  git push origin main*/

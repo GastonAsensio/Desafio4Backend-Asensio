@@ -4,7 +4,7 @@ const router = express.Router()
 let users = [];
 
 router.get('/', (req, res) => {
-    res.send('Hola')
+    res.send({users})
 })
 
 router.get('/:id', (req, res) => {

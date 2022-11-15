@@ -5,7 +5,7 @@ let pets = [];
 
 // '/' => '/pets/'
 router.get('/', (req, res) => {
-    res.send('Hello pets!')
+    res.send({pets})
 })
 
 router.get('/:id', (req, res) => {
